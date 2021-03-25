@@ -1,40 +1,40 @@
 *,
-html {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+html {
   font-size: $font-size;
   font-family: $font-family;
+  background-image: linear-gradient(
+    to right,
+    $bg-color-light 0%,
+    $bg-color-dark 100%
+  );
+  padding: 2rem;
 }
 
 body {
-  background: $bg-color;
-  min-height: 100vh;
-  position: relative;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4rem);
-    -webkit-backdrop-filter: blur(3rem);
-  }
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(165, 165, 165, 0.37);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  border-radius: 20px;
 
   .circle1,
   .circle2,
   .circle3,
   .circle4 {
+    display: none;
     position: absolute;
     height: 20rem;
     width: 20rem;
     background: rgba(255, 255, 255, 1);
     border-radius: 50%;
-    z-index: -1;
+    z-index: 1;
   }
 
   .circle1 {

@@ -1,11 +1,109 @@
 header {
-  position: relative;
-  height: 8vh;
-  background: black;
-  z-index: 100;
+}
 
-  p {
-    font-size: 40px;
-    color: #fff;
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+
+  &__link {
+    display: flex;
+    justify-content: space-around;
+    background: red;
+    width: 35%;
+
+    @media screen and (max-width: 1024px) {
+      width: 50%;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 1.8rem;
+    }
+  }
+
+  .burger {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .burger {
+    & div {
+      width: 2.5rem;
+      height: 0.3rem;
+      background: $bg-color-light;
+      margin: 0.5rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .line1 {
+      width: -1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navigation__link {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    height: 88vh;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(165, 165, 165, 0.37);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    clip-path: circle(50px at 90% -10%);
+    transition: all 1s;
+  }
+
+  .nav-active {
+    clip-path: circle(1000px at 75% -10%);
+  }
+
+  .navigation__item {
+    opacity: 0;
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
