@@ -2,6 +2,7 @@ const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".navigation__link");
   const navLinks = document.querySelectorAll(".navigation__item");
+  const lineWidth = document.querySelector(".line1");
 
   burger.addEventListener("click", () => {
     // TOGGLE NAVIGATION
@@ -20,6 +21,7 @@ const navSlide = () => {
 
     // BURGER ANIMATION
     burger.classList.toggle("toggle");
+    lineWidth.classList.toggle("line-width");
   });
 };
 
