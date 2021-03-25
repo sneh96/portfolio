@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "snehal patel portfolio",
   "main": "index.js",
-  "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneh96/Portfolio.git"
@@ -18,7 +15,6 @@
   },
   "homepage": "https://github.com/sneh96/Portfolio#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
     "sass": "^1.32.8"
   }
 }
