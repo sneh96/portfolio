@@ -289,6 +289,13 @@ main {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero__title {
+    padding-left: 2rem;
+    padding-top: 3rem;
+  }
+}
+
 .hero__title--line1 {
   color: #4269e9;
   font-size: 6rem;

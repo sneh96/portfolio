@@ -32,6 +32,11 @@ main {
       padding-top: 4rem;
     }
 
+    @media screen and (max-width: 480px) {
+      padding-left: 2rem;
+      padding-top: 3rem;
+    }
+
     &--line1 {
       color: $color-primary;
       font-size: 6rem;
