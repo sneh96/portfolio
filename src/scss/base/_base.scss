@@ -8,12 +8,21 @@
 html {
   font-size: $font-size;
   font-family: $font-family;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     $bg-color-light 0%,
     $bg-color-dark 100%
   );
+  backdrop-filter: blur(1rem);
   padding: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: $font-size-tab;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: $font-size-mobile;
+  }
 }
 
 body {
