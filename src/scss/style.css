@@ -287,6 +287,13 @@ main {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .hero__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +364,15 @@ main {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero__image-container {
+    padding-right: 0rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .hero__image-container img {
   width: 100%;
 }
@@ -412,7 +428,7 @@ main {
 
 @media screen and (max-width: 480px) {
   .btn__cta {
-    width: 35%;
+    width: 40%;
   }
 }
 
