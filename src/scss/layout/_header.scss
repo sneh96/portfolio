@@ -1,11 +1,13 @@
 header {
   position: relative;
   border-radius: 20px;
+  border: 1px solid white;
 }
 
 .navigation {
   display: flex;
-  padding: 0rem 4rem;
+  width: 100%;
+  padding: 0rem 8rem;
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
