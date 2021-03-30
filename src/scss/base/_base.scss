@@ -28,6 +28,12 @@ html {
   @media screen and (max-width: 768px) {
     font-size: $font-size-mobile;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: $font-size-tab;
+    padding: 2rem;
+    min-height: 100vh;
+  }
 }
 
 body {
