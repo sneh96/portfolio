@@ -19,6 +19,7 @@ main {
   }
 
   @media screen and (max-width: 480px) {
+    row-gap: 4rem;
     grid-template-columns: 1fr;
   }
 
@@ -41,18 +42,33 @@ main {
       color: $color-primary;
       font-size: 6rem;
       margin-bottom: 1rem;
+
+      @media screen and (max-width: 480px) {
+        font-size: 5rem;
+        margin-bottom: 0rem;
+      }
     }
 
     &--name {
       font-size: 6rem;
       color: $color-primary;
       margin-bottom: 1rem;
+
+      @media screen and (max-width: 480px) {
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+      }
     }
 
     &--designation {
       font-size: 2.5rem;
       color: $color-primary-dark;
       margin-bottom: 4rem;
+
+      @media screen and (max-width: 480px) {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
     }
   }
 
