@@ -1,7 +1,6 @@
 header {
   position: relative;
   border-radius: 20px;
-  border: 1px solid white;
 }
 
 .navigation {
@@ -11,6 +10,14 @@ header {
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
+
+  .logo {
+    height: 6rem;
+
+    & img {
+      height: 100%;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     padding: 0rem 3rem;
@@ -57,7 +64,7 @@ header {
       text-decoration: none;
       letter-spacing: 1px;
       font-size: 1.8rem;
-      font-weight: 600;
+      font-weight: 700;
     }
   }
 
