@@ -16,18 +16,13 @@ html {
     #6b8cce 100%,
     #a2b6df 100%
   );
-  // background-image: linear-gradient(
-  //   -180deg,
-  //   rgba(255, 255, 255, 0.5) 0%,
-  //   rgba(0, 0, 0, 0.5) 100%
-  // );
-  // background-blend-mode: lighten;
-  // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
   backdrop-filter: blur(1rem);
-  padding: 4rem;
+  padding: 6rem;
 
   @media screen and (max-width: 1024px) {
     font-size: $font-size-tab;
+    padding: 4rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -36,6 +31,7 @@ html {
 }
 
 body {
+  min-height: 90vh;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.65);
   box-shadow: 0 8px 32px 0 rgba(165, 165, 165, 0.37);

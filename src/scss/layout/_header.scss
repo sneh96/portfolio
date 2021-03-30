@@ -29,14 +29,14 @@ header {
     width: 35%;
 
     @media screen and (max-width: 1024px) {
-      width: 50%;
+      width: 60%;
     }
 
     @media screen and (max-width: 768px) {
       position: absolute;
       right: 0;
       top: 8vh;
-      height: 88vh;
+      height: 75vh;
       background: rgba(255, 255, 255, 0.65);
       box-shadow: 0 8px 32px 0 rgba(165, 165, 165, 0.37);
       backdrop-filter: blur(1rem);

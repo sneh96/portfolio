@@ -21,6 +21,19 @@
     transform: translateY(0rem);
     transition: all 0.2s;
 
+    @media screen and (max-width: 1024px) {
+      width: 40%;
+      padding: 1.5rem 0rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 30%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 35%;
+    }
+
     &:hover {
       transform: translateY(-0.2rem);
     }
